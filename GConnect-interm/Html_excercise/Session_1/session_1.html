@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style1.css" />
+    <title>Danh sách sinh viên</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrappe_header">
+        <div class="header">
+          <h1 class="title">Danh sách sinh viên</h1>
+        </div>
+        <div class="search">
+          <label for="">Từ khoá</label>
+          <input
+            class="txtTuKhoa"
+            type="text"
+            name=""
+            id=""
+            placeholder="Từ khoá cần tìm kiếm"
+          />
+          <button>Tìm kiếm</button>
+        </div>
+      </div>
+      <div class="result">
+        <table style="border-collapse: collapse">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Mã sinh viên</th>
+              <th>Tên sinh viên</th>
+              <th>Ngày sinh</th>
+              <th>Giới tính</th>
+              <th>Khoa</th>
+              <th colspan="2">Thao tác</th>
+            </tr>
+          </thead>
+          <tbody id="body-table"></tbody>
+        </table>
+      </div>
+      <div class="input-information">
+        <div class="btn">
+          <div>
+            <button id="btn-new" onclick="addNew()">Thêm mới</button>
+            <button id="btn-update">Cập Nhật</button>
+            <button class="mute" id="btn-sua">Cập Nhật</button>
+            <button>Xoá</button>
+          </div>
+          <ul>
+            <li>
+              <label class="label-input" for="">Mã sinh viên</label>
+              <div>
+                <input
+                  class="input_element"
+                  type="text"
+                  name="txtMaSV"
+                  id="maSv"
+                />
+                <i style="color: red">*</i>
+              </div>
+              <span class="error-message" id="maSv-error"></span>
+            </li>
+            <li>
+              <label class="label-input" for="">Tên sinh viên</label>
+              <div>
+                <input
+                  class="input_element"
+                  type="text"
+                  name="txTenSV"
+                  id="tenSv"
+                />
+                <i style="color: red">*</i>
+              </div>
+              <span class="error-message" id="tenSv-error"></span>
+            </li>
+            <li>
+              <label class="label-input" for="">Ngày sinh</label>
+              <div>
+                <input
+                  class="input_element"
+                  type="text"
+                  name="txtNgaySinh"
+                  id="ngaySinh"
+                />
+              </div>
+              <span class="error-message" id="ngaySinh-error"></span>
+            </li>
+            <li class="gender_element">
+              <label for="">Giới tính</label>
+              <div class="gender_selector">
+                <input
+                  type="radio"
+                  value="nam"
+                  class="rdbGioiTinh"
+                  name="gender"
+                  id="gender"
+                />
+                <label for="">Nam</label>
+                <input
+                  type="radio"
+                  value="nữ"
+                  class="rdbGioiTinh"
+                  name="gender"
+                  checked
+                  id="gender"
+                />
+                <label for="">Nữ</label>
+              </div>
+            </li>
+            <li>
+              <label for="">Khoa</label>
+              <select class="khoa" name="Khoa" id="khoa">
+                <option value="1">Công nghệ thông tin</option>
+                <option value="2">Khoa học máy tính</option>
+              </select>
+              <i style="color: red">*</i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./main_1.js"></script>
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.tic_wrapper .cell_main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 400px;
+  height: 400px;
+}
+.tic_wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+.tic_wrapper .cell {
+  min-width: 27px;
+  min-height: 27px;
+}
+
+.cell_history {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cell_history > div {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cell_history .cell {
+  box-sizing: border-box;
+  font-size: 10px;
+}
